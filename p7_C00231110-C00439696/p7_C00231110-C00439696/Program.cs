@@ -1,3 +1,8 @@
+// Austin Dugas, Cameron Washington
+// C00231110, C00439696
+// CMPS 358
+// Project: p8
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
