@@ -28,3 +28,8 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+static void Main(String[] args)
+{
+
+}
