@@ -5,6 +5,33 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post" enctype="multipart/form-data">
+        Click Submit to show discontinued items
+        <input type="hidden" asp-for="Discontinued" value="123">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br/>
+    <p>@IsDiscontinued.getIsDiscontinued(Model.Discontinued)</p>
+</div>
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data">
+        Enter a Country:
+        <input type="text" asp-for="CountryCus">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br/>
+    <p>@ListCustomersInfo.getListCustomersInfo(Model.CountryCus)</p>
+    <br><br/>
+</div>
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data">
+        Enter a Country:
+        <input type="text" asp-for="CountrySup">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br/>
+    <p>@ListSupplierInfo.getListSupplierInfo(Model.CountrySup)</p>
+    <br><br/>
 </div>
