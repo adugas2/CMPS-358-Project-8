@@ -35,3 +35,25 @@
     <p>@ListSupplierInfo.getListSupplierInfo(Model.CountrySup)</p>
     <br><br/>
 </div>
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data">
+        Enter a Country:
+        <input type="text" asp-for="Supplier">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br/>
+    <p>@isNotDiscontinued.getIsNotDiscontinued(Model.Supplier)</p>
+    <br><br/>
+</div>
+
+<div class="text-center">
+    <form method="post" enctype="multipart/form-data">
+        Enter a Country:
+        <input type="text" asp-for="Order">
+        <input type="submit" value="Submit">
+    </form>
+    <br><br/>
+    <p>@Order.getOrder(Model.Order)</p>
+    <br><br/>
+</div>
